@@ -13,6 +13,7 @@ const Item = styled(Button)(({ theme }) => ({
 		backgroundColor: theme.palette.primary.accent,
 		color: theme.palette.primary.main,
 	},
+	height: "100%",
 }));
 
 const Tones = React.memo(function Tones() {
@@ -27,7 +28,11 @@ const Tones = React.memo(function Tones() {
 				columnSpacing={{ xs: 1, sm: 1, md: 1 }}
 			>
 				{tones.map((tone, i) => (
-					<Grid xs={6} key={`${tone.type}-${i}`}>
+					<Grid
+						alignContent="stretch"
+						xs={6}
+						key={`${tone.type}-${i}`}
+					>
 						<Item fullWidth>
 							<ToneInfo {...tone} />
 						</Item>
