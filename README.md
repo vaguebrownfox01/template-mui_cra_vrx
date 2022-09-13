@@ -1,7 +1,3 @@
-# Pnoi-phone
+# App Template
 
-A SPIRE Lab project
-
-## Tann (Tone annotation)
-
-Annotation of audio recording in real time
+## ReactJS Web-app template: MUI + CRA
